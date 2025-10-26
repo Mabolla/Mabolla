@@ -36,4 +36,13 @@ Projelerime katkı yapmak istersen:
 
 - GitHub: https://github.com/Mabolla
 
+- ---
+
+<!-- STATS_START -->
+
+⚙️ *İstatistikler yükleniyor...*
+
+<!-- STATS_END -->
+
+
 
