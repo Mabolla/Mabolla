@@ -1,9 +1,16 @@
+permissions:
+  contents: write
+
+${{ secrets.GITHUB_TOKEN }}
 name: Update Stats
+
+permissions:
+  contents: write   # ✅ Commit & push izni veriyoruz
 
 on:
   schedule:
-    - cron: '0 10 * * 0'   # Her Pazar 10:00'da günceller
-  workflow_dispatch:        # İstersen manuel de çalıştırabilirsin
+    - cron: '0 10 * * 0'   # Her Pazar 10:00
+  workflow_dispatch:
 
 jobs:
   build:
