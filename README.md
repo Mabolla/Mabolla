@@ -2,97 +2,92 @@
 
 # Mabolla
 
-### Building on Base 🔵
+### Onchain builder shipping usable products
 
-**Onchain tools · Base-native applications · Open-source development**
+**Smart contracts · Payment infrastructure · Base & Arc · Open-source development**
 
-Building useful onchain products and documenting the journey from tooling to full Base applications.
+I build working onchain products, deploy them to public testnets, and document the complete path from idea to verified transaction.
 
 </div>
 
 ---
 
-## 🔵 Building on Base
+## 🌿 Featured Build — Environmental Retainage
 
-My focus is simple: **learn by shipping real things onchain.**
+A programmable environmental performance assurance system deployed on **Arc Testnet**.
 
-I'm currently building around the Base ecosystem — starting with developer tooling and progressively moving into Base-native applications, wallet integrations, attribution, and smart contracts.
+Project owners fund a USDC milestone, the base payment is released when the work is accepted, and a pre-agreed retainage remains locked until an independent verifier reviews the environmental evidence. Successful verification releases the retainage; a confirmed breach routes the fixed remediation amount according to the terms established onchain.
 
-### Current focus
+**What shipped**
 
-- Base & Ethereum developer tooling
-- Base-native applications
-- Wallet integrations
-- Base Sepolia development & testing
-- Onchain transaction attribution
-- Open-source development
+- Live Solidity contract on Arc Testnet
+- End-to-end USDC milestone lifecycle
+- Separate owner, contractor, verifier, and remediation roles
+- Evidence anchoring and bounded review/cure periods
+- 13 passing contract tests
+- Public Next.js application with green CI and GitHub Pages deployment
+
+**Built with:** `Solidity` · `Hardhat` · `Next.js` · `ethers.js` · `USDC` · `Arc`
+
+[**Live app**](https://mabolla.github.io/arc-environmental-retainage/) · [**Source code**](https://github.com/Mabolla/arc-environmental-retainage) · [**Testnet contract**](https://testnet.arcscan.app/address/0x19fbf0B85e66d68D312cD18D04A1a789107387FF)
 
 ---
 
-## 🛠 Projects
+## 🔵 Building on Base
 
-### ⚡ `wallet-balance-cli`
+My Base work focuses on useful applications, wallet and payment infrastructure, transaction attribution, and meaningful open-source contributions.
+
+### Current focus
+
+- Base-native applications and developer tooling
+- Smart-contract and payment infrastructure
+- Wallet integrations
+- Onchain transaction attribution
+- Tested open-source contributions
+
+---
+
+## 🛠 More Projects
+
+### ⚡ [`wallet-balance-cli`](https://github.com/Mabolla/wallet-balance-cli)
 
 A lightweight command-line tool for checking wallet balances across **Ethereum and Base**.
 
 **Built with:** `Python` · `Web3` · `Ethereum` · `Base`
 
-> Active development
-
 ---
 
-### 🧱 `builder-log`
+### 🧱 [`builder-log`](https://github.com/Mabolla/builder-log)
 
-A public record of my development progress, experiments, and shipped work as I build deeper into the Base ecosystem.
+A public record of development progress, experiments, and shipped work across the onchain ecosystem.
 
 **Focus:** `Base` · `Onchain Development` · `Open Source`
-
-> Building in public
-
----
-
-## 🧭 What I'm Building Toward
-
-The next phase is moving beyond standalone tooling into complete Base-native products.
-
-- [ ] Ship a Base-native web application
-- [ ] Integrate Base Account
-- [ ] Execute and verify real Base Sepolia interactions
-- [ ] Implement ERC-8021 Builder Code attribution
-- [ ] Explore Base-native payment and wallet primitives
-- [ ] Contribute meaningful fixes and improvements to open-source projects
-- [ ] Deploy and document production-ready Base applications
 
 ---
 
 ## ⚙️ Builder Stack
 
-### Working with
-
-![Python](https://img.shields.io/badge/Python-Developer-informational?logo=python)
+![Solidity](https://img.shields.io/badge/Solidity-Smart_Contracts-363636?logo=solidity)
+![TypeScript](https://img.shields.io/badge/TypeScript-Applications-3178C6?logo=typescript)
 ![Base](https://img.shields.io/badge/Base-Building-0052FF?logo=coinbase)
 ![Ethereum](https://img.shields.io/badge/Ethereum-Onchain-3C3C3D?logo=ethereum)
-![Git](https://img.shields.io/badge/Git-Version_Control-F05032?logo=git)
-![GitHub](https://img.shields.io/badge/GitHub-Open_Source-181717?logo=github)
+![Python](https://img.shields.io/badge/Python-Developer-3776AB?logo=python)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-2088FF?logo=githubactions)
 
-### Expanding into
-
-`TypeScript` · `Solidity` · `Foundry` · `wagmi` · `viem` · `Base Account`
+`Solidity` · `TypeScript` · `Next.js` · `Hardhat` · `ethers.js` · `Python` · `Web3`
 
 ---
 
 ## 📍 Builder Status
 
-**Current phase → Foundation & Shipping**
+**Current phase → Shipping complete onchain products**
 
-Tooling → Base-native apps → onchain integrations → open-source contributions.
-
-Every project here is part of that progression.
+Idea → contract design → tests → deployment → verified transactions → public application.
 
 ---
 
 <div align="center">
 
-### 🔵 Build. Ship. Improve. Repeat.
+### Build. Ship. Verify. Improve.
 
 </div>
