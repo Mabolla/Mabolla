@@ -49,16 +49,6 @@ My Base work focuses on useful applications, wallet and payment infrastructure, 
 
 ## 🛠 More Projects
 
-### 🧪 [`speedrun-ethereum-tokenization`](https://github.com/Mabolla/speedrun-ethereum-tokenization)
-
-An accepted **SpeedRun Ethereum** challenge: a verified ERC-721 contract on Sepolia with a live Scaffold-ETH 2 interface for minting and transferring NFTs.
-
-[**Live app**](https://mabolla-tokenization.vercel.app) · [**Verified contract**](https://sepolia.etherscan.io/address/0x2665ce73d4465dc53e0a15f56b79007354bc4619)
-
-**Built with:** `Solidity` · `OpenZeppelin` · `Scaffold-ETH 2` · `Next.js` · `Sepolia`
-
----
-
 ### ⚡ [`wallet-balance-cli`](https://github.com/Mabolla/wallet-balance-cli)
 
 A lightweight command-line tool for checking wallet balances across **Ethereum and Base**.
