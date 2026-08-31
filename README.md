@@ -2,92 +2,75 @@
 
 # Mabolla
 
-### Onchain builder shipping usable products
+### Onchain product builder
 
-**Smart contracts · Payment infrastructure · Base & Arc · Open-source development**
+**Arc / Circle · Smart contracts · Payment infrastructure · Open source**
 
-I build working onchain products, deploy them to public testnets, and document the complete path from idea to verified transaction.
+I build and test usable onchain products—from contract design and public testnet deployment to verified transactions and production-facing applications.
 
 </div>
 
 ---
 
-## 🌿 Featured Build — Environmental Retainage
+## Featured Builds
 
-A programmable environmental performance assurance system deployed on **Arc Testnet**.
+### [`arc-paylink`](https://github.com/Mabolla/arc-paylink) — Verifiable USDC settlement on Arc
 
-Project owners fund a USDC milestone, the base payment is released when the work is accepted, and a pre-agreed retainage remains locked until an independent verifier reviews the environmental evidence. Successful verification releases the retainage; a confirmed breach routes the fixed remediation amount according to the terms established onchain.
+Turns an invoice, milestone, or agent task into a shareable USDC payment with a verifiable source-to-destination audit trail.
 
-**What shipped**
+- Arc and Base Sepolia payment routes with Circle CCTP settlement on Arc
+- Google-authenticated Circle smart-account recipient onboarding
+- Deterministic claimable escrow with EIP-712 and EIP-1271 support
+- Private, append-only settlement records and controlled, non-executable recovery plans
+- Verified end-to-end Arc Testnet payment, bridge, smart-account, and claim flows
 
-- Live Solidity contract on Arc Testnet
-- End-to-end USDC milestone lifecycle
+**Stack:** `TypeScript` · `Next.js` · `Solidity` · `Circle App Kit` · `CCTP` · `USDC` · `Arc`
+
+---
+
+### [`arc-environmental-retainage`](https://github.com/Mabolla/arc-environmental-retainage) — Environmental performance assurance
+
+A programmable retainage system for environmental commitments, deployed on Arc Testnet.
+
+- USDC-funded milestone lifecycle
 - Separate owner, contractor, verifier, and remediation roles
-- Evidence anchoring and bounded review/cure periods
-- 13 passing contract tests
-- Public Next.js application with green CI and GitHub Pages deployment
+- Evidence anchoring with bounded review and cure periods
+- Tested Solidity contracts and a public Next.js application
 
-**Built with:** `Solidity` · `Hardhat` · `Next.js` · `ethers.js` · `USDC` · `Arc`
+[**Live app**](https://mabolla.github.io/arc-environmental-retainage/) · [**Testnet contract**](https://testnet.arcscan.app/address/0x19fbf0B85e66d68D312cD18D04A1a789107387FF)
 
-[**Live app**](https://mabolla.github.io/arc-environmental-retainage/) · [**Source code**](https://github.com/Mabolla/arc-environmental-retainage) · [**Testnet contract**](https://testnet.arcscan.app/address/0x19fbf0B85e66d68D312cD18D04A1a789107387FF)
-
----
-
-## 🔵 Building on Base
-
-My Base work focuses on useful applications, wallet and payment infrastructure, transaction attribution, and meaningful open-source contributions.
-
-### Current focus
-
-- Base-native applications and developer tooling
-- Smart-contract and payment infrastructure
-- Wallet integrations
-- Onchain transaction attribution
-- Tested open-source contributions
+**Stack:** `Solidity` · `Hardhat` · `Next.js` · `ethers.js` · `USDC` · `Arc`
 
 ---
 
-## 🛠 More Projects
+## Open-Source Contributions
 
-### ⚡ [`wallet-balance-cli`](https://github.com/Mabolla/wallet-balance-cli)
+Tested contributions to established protocol and infrastructure codebases:
 
-A lightweight command-line tool for checking wallet balances across **Ethereum and Base**.
-
-**Built with:** `Python` · `Web3` · `Ethereum` · `Base`
-
----
-
-### 🧱 [`builder-log`](https://github.com/Mabolla/builder-log)
-
-A public record of development progress, experiments, and shipped work across the onchain ecosystem.
-
-**Focus:** `Base` · `Onchain Development` · `Open Source`
+- [XMTP `libxmtp` #4001](https://github.com/xmtp/libxmtp/pull/4001) — Android group-stream reliability
+- [XMTP `xmtp-js` #1861](https://github.com/xmtp/xmtp-js/pull/1861) — complete CLI table column handling
+- [Seismic `seismic-alloy` #111](https://github.com/SeismicSystems/seismic-alloy/pull/111) — EIP-4844 generic trait support
 
 ---
 
-## ⚙️ Builder Stack
+## More Work
 
-![Solidity](https://img.shields.io/badge/Solidity-Smart_Contracts-363636?logo=solidity)
-![TypeScript](https://img.shields.io/badge/TypeScript-Applications-3178C6?logo=typescript)
-![Base](https://img.shields.io/badge/Base-Building-0052FF?logo=coinbase)
-![Ethereum](https://img.shields.io/badge/Ethereum-Onchain-3C3C3D?logo=ethereum)
-![Python](https://img.shields.io/badge/Python-Developer-3776AB?logo=python)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-2088FF?logo=githubactions)
+### [`wallet-balance-cli`](https://github.com/Mabolla/wallet-balance-cli)
 
-`Solidity` · `TypeScript` · `Next.js` · `Hardhat` · `ethers.js` · `Python` · `Web3`
+A lightweight Python CLI for checking wallet balances across Ethereum and Base.
 
 ---
 
-## 📍 Builder Status
+## Stack
 
-**Current phase → Shipping complete onchain products**
+`Solidity` · `TypeScript` · `Next.js` · `Hardhat` · `ethers.js` · `Python` · `Web3` · `GitHub Actions`
 
-Idea → contract design → tests → deployment → verified transactions → public application.
+**Current focus:** Arc/Circle payment infrastructure, smart-account flows, verifiable settlement, and tested open-source contributions.
 
 ---
 
 <div align="center">
 
-### Build. Ship. Verify. Improve.
+### Build. Test. Ship. Verify.
 
 </div>
