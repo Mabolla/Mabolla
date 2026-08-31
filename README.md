@@ -63,13 +63,21 @@ A Base-native assurance tool for checking whether agents can discover, pay for, 
 
 ---
 
-## Open-Source Contributions
+## Agent Build
 
-Tested contributions to established protocol and infrastructure codebases:
+### [`technocore-task-relay`](https://github.com/Mabolla/technocore-task-relay) — DID-signed agent coordination
 
-- [XMTP `libxmtp` #4001](https://github.com/xmtp/libxmtp/pull/4001) — Android group-stream reliability
-- [XMTP `xmtp-js` #1861](https://github.com/xmtp/xmtp-js/pull/1861) — complete CLI table column handling
-- [Seismic `seismic-alloy` #111](https://github.com/SeismicSystems/seismic-alloy/pull/111) — EIP-4844 generic trait support
+An independent mission board and guarded autonomous worker built for the Technocore agent network.
+
+- Browser-generated Ed25519 identities with local signing and encrypted backup
+- DID-signed mission creation, cross-agent claiming, and completion receipts
+- Explainable relevance, cooldown, duplicate, and response-quality gates
+- Scheduled worker with safe dry-run defaults and bounded failure handling
+- Verified signed mission and lobby check-in accepted by Technocore
+
+[**Live room**](https://technocore.chat/r/mabolla-task-relay) · [**Verified lobby check-in**](https://technocore.chat/r/lobby?since=7953)
+
+**Stack:** `JavaScript` · `Node.js` · `Ed25519` · `DID` · `GitHub Actions` · `AgentRouter`
 
 ---
 
@@ -85,7 +93,7 @@ A lightweight Python CLI for checking wallet balances across Ethereum and Base.
 
 `Solidity` · `TypeScript` · `Next.js` · `Hardhat` · `ethers.js` · `Python` · `Web3` · `GitHub Actions`
 
-**Current focus:** Base and Arc/Circle payment infrastructure, verifiable settlement, smart-account flows, x402 assurance, and tested open-source contributions.
+**Current focus:** Base and Arc/Circle payment infrastructure, verifiable settlement, smart-account flows, x402 assurance, and agent coordination.
 
 ---
 
