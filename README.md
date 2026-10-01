@@ -45,21 +45,33 @@ A programmable retainage system for environmental commitments, deployed on Arc T
 
 ## Base Builds
 
-### [`base-receipt`](https://github.com/Mabolla/base-receipt) — Server-verified Base Pay receipts
+### [`base-receipt`](https://github.com/Mabolla/base-receipt) — Base USDC payments and MCP receipts
 
-A production-minded Base Mainnet USDC payment flow that independently verifies settlement before issuing a durable receipt.
+A Base Mainnet USDC payment flow for wallet users and agents, with independent settlement verification before issuing a durable receipt.
 
-- Short-lived signed payment requests and server-side amount/recipient verification
+- MCP tools: `prepare_base_payment` and `issue_base_receipt`
+- Short-lived signed payment requests and unsigned ERC-8021-attributed transfer data; the caller controls wallet approval and submission
+- Server-side settlement, sender, amount, recipient, and Builder Code verification
 - Atomic PostgreSQL replay protection
-- Verified production flow with a real Base Mainnet USDC payment
+- Fresh wallet-approved **0.01 USDC self-transfer → same-order MCP receipt** verified on **2026-10-01**
 
-### [`base-agent-meter`](https://github.com/Mabolla/base-agent-meter) — x402 production assurance
+[**Live app**](https://base-receipt-six.vercel.app/) · [**Agent guide**](https://base-receipt-six.vercel.app/agents) · [**Mainnet transaction**](https://basescan.org/tx/0xae5b6ab118a58aed27c89b05ef9af7e75406487d4d42496284e6767f6cf14483) · [**MCP proof record**](https://github.com/Mabolla/base-receipt/commit/6390a281b148faf901a08f3a86eab3db8a7abf76)
 
-A Base-native assurance tool for checking whether agents can discover, pay for, settle, and consume x402 services.
+**MCP:** `https://base-receipt-six.vercel.app/mcp` · **Builder Code:** `bc_87fjmj1l`
 
-- Unpaid pre-deploy checks and explicitly gated live paid canaries
-- Base USDC settlement proof and ERC-8021 builder-attribution verification
-- Verified x402 v2 seller flow with a real Base Mainnet payment
+### [`base-agent-meter`](https://github.com/Mabolla/base-agent-meter) — x402 API and Base payment verification
+
+A read-only assurance tool for inspecting x402 APIs and verifying existing Base USDC settlements, available through a web checker and MCP.
+
+- MCP tools: `check_x402_endpoint` and `verify_base_settlement`
+- Unpaid GET checks for x402 payment challenges, terms, discovery metadata, and declared attribution
+- Existing transaction checks against recipient, amount, optional payer, and ERC-8021 Builder Code expectations
+- Live hosted settlement verification exercised against a real historical Base Mainnet payment
+- Standalone tooling retains explicitly gated paid canaries; the current hosted checker and MCP tools perform unpaid reads
+
+[**Live checker**](https://base-receipt-six.vercel.app/meter) · [**Capabilities**](https://base-receipt-six.vercel.app/api/meter)
+
+**MCP:** `https://base-receipt-six.vercel.app/meter/mcp` · **Builder Code:** `bc_h2oqnbbh`
 
 ---
 
